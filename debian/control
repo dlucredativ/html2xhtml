@@ -1,0 +1,11 @@
+Source: html2xhtml
+Section: contrib/utils
+Priority: extra
+Maintainer: Damian Lukowski <damian.lukowski@credativ.de>
+Build-Depends: debhelper (>= 7), libtool, byacc, flex, autoconf, automake
+Standards-Version: 3.9.1
+
+Package: html2xhtml
+Architecture: any
+Depends: 
+Description: This tool converts HTML to XHTML

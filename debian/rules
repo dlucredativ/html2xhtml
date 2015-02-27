@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+override_dh_auto_configure:
+	aclocal
+	libtoolize
+	touch config.rpath
+	autoheader
+	automake --add-missing
+	autoconf
+	./configure --prefix=/usr
